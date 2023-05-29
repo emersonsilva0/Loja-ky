@@ -47,6 +47,8 @@ public class ClienteDAO {
                 cliente.setData_nasc(resultSet.getDate("data_nasc"));
                 cliente.setTelefone(resultSet.getString("telefone"));
                 cliente.setTipo_cliente(resultSet.getString("tipo_cliente"));
+                cliente.setValor(resultSet.getDouble("valor"));
+                
 
             }
         } catch (SQLException e) {
